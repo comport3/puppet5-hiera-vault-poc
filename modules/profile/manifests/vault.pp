@@ -1,5 +1,4 @@
 class profile::vault {
-  package { ['git','unzip','wget']:ensure => present}
   exec { '/opt/puppetlabs/puppet/bin/gem install vault':
     command => '/opt/puppetlabs/puppet/bin/gem install vault',
     creates => '/opt/puppetlabs/puppet/lib/ruby/gems/2.4.0/gems/vault-0.11.0',
@@ -28,7 +27,6 @@ class profile::vault {
     },
     version   => '0.10.3',
     enable_ui => true,
-    require => Package['git','unzip','wget'],
   }
   notify { "vault parameter: ${lookup({"name" => "vault_notify", "default_value" => "Failed to lookup value."})}":}
 }
