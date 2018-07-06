@@ -1,0 +1,2 @@
+---
+vault_notify: 'Value coming from Hiera YAML, Vault NOT working'

@@ -1,0 +1,21 @@
+---
+version: 5
+hierarchy:
+#  - name: "Hiera-vault lookup"
+#    lookup_key: hiera_vault
+#    options:
+#      confine_to_keys:
+#        - '^vault_.*'
+#        - '^.*_password$'
+#        - '^password.*'
+#      ssl_verify: false
+#      default_field: value
+#      address: http://localhost:8200
+#      token: <insert-your-vault-token-here>
+#      mounts:
+#        generic:
+#          - "secret/puppet/nodes/%{::networking.hostname}/"
+#          - "secret/puppet/common/"
+  - name: "Other YAML hierarchy levels"
+    paths:
+      - "common.yaml"
