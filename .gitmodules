@@ -1,3 +1,6 @@
 [submodule "modules/hiera_vault"]
 	path = modules/hiera_vault
 	url = https://github.com/davealden/hiera-vault
+[submodule "modules/vault"]
+	path = modules/vault
+	url = https://github.com/jsok/puppet-vault.git
