@@ -7,10 +7,8 @@ packages:
  - wget
  - unzip
 runcmd:
- - 'wget https://yum.puppetlabs.com/puppetlabs-release-el-7.noarch.rpm'
- - 'rpm -Uvh puppetlabs-release-el-7.noarch.rpm'
- - 'rm -f puppetlabs-release-el-7.noarch.rpm'
- - 'yum update'
+ - 'rpm -Uvh https://yum.puppet.com/puppet5/puppet5-release-el-7.noarch.rpm'
+ - 'rm -f puppet5-release-el-7.noarch.rpm'
  - 'yum install -y puppet-agent'
  - 'rm -fr /etc/puppetlabs/code/environments/production'
  - 'git clone https://github.com/comport3/puppet5-hiera-vault-poc.git /etc/puppetlabs/code/environments/production'
