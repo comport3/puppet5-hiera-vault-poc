@@ -1,0 +1,3 @@
+[submodule "modules/hiera_vault"]
+	path = modules/hiera_vault
+	url = https://github.com/davealden/hiera-vault
