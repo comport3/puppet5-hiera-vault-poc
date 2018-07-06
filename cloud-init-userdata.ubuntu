@@ -6,14 +6,15 @@ packages:
  - git
  - wget
 runcmd:
- - 'wget https://apt.puppetlabs.com/puppet5-release-bionic.deb'
- - 'dpkg -i puppet5-release-bionic.deb'
- - 'rm -f puppet5-release-bionic.deb'
+ - 'wget https://apt.puppetlabs.com/puppet5-release-xenial.deb'
+ - 'dpkg -i puppet5-release-xenial.deb'
+ - 'rm -f puppet5-release-xenial.deb'
  - 'apt update'
  - 'apt install -y puppet-agent'
  - 'rm -fr /etc/puppetlabs/code/environments/production'
  - 'git clone https://github.com/comport3/puppet5-hiera-vault-poc.git /etc/puppetlabs/code/environments/production'
  - 'cd /etc/puppetlabs/code/environments/production && git submodule update --init --recursive'
- - '/opt/puppetlabs/bin/puppet apply /etc/puppetlabs/code/environments/production/manifests/site.pp'
+ - 'ln -s /opt/puppetlabs/bin/puppet /bin/'
+ - 'puppet apply /etc/puppetlabs/code/environments/production/manifests/site.pp'
 final_message: "The system is up after $UPTIME seconds"
 
