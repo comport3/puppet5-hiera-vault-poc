@@ -5,6 +5,7 @@ package_reboot_if_required: true
 packages:
  - git
  - wget
+ - unzip
 runcmd:
  - 'wget https://apt.puppetlabs.com/puppet5-release-xenial.deb'
  - 'dpkg -i puppet5-release-xenial.deb'
