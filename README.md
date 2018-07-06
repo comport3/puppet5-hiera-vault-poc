@@ -4,6 +4,8 @@ v0.1 20180706
 
 Tested with Ubuntu and CentOS, but should work on other OSs with minimal effort
 
+System Requirements: 1 vCPU, 256Mb Memory, 3G Storage/Disk
+
 A POC example of integrating Hiera with Hashicorp Vault for secure secret lookup using Puppet 5.5+
 
 This POC environment is based extensively on the upstream work done by:
