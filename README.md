@@ -2,7 +2,7 @@
 
 v0.1 20180706
 
-Tested with Ubuntu and CentOS, but should work on other OSs with minimal effort
+Tested with Ubuntu 16.04 and CentOS 7x, but should work on other OSs with minimal effort
 
 System Requirements: 1 vCPU, 256Mb Memory, 3G Storage/Disk
 
