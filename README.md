@@ -34,5 +34,7 @@ Running Puppet with the above command at this stage should return the value from
 Edit the hiera.yaml file, remove the comments (#) and add the Master key noted above (beyond POC this should be changed for a service account with read/list permissions).
 
 Within the web browser, add a secret as per 'screenshot1.png', then re-run the above 'apply' command - if all is working, you should see the following returned:
- Notice: vault parameter: SUCCESS! This 'secret' came from Vault!
- Notice: /Stage[main]/Profile::Vault/Notify[vault parameter: SUCCESS! This 'secret' came from Vault!]/message: defined 'message' as 'vault parameter: SUCCESS! This \'secret\' came from Vault!'
+
+Notice: vault parameter: SUCCESS! This 'secret' came from Vault!
+
+Notice: /Stage[main]/Profile::Vault/Notify[vault parameter: SUCCESS! This 'secret' came from Vault!]/message: defined 'message' as 'vault parameter: SUCCESS! This 'secret' came from Vault!'
