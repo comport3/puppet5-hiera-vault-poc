@@ -21,7 +21,7 @@ INSTRUCTIONS:
 
 Launch an instance based on the "Cloud Init" (User Data), or copy/paste the commands and logic into your virtual machine.
 
-Access Vault in your web browser by browsing to http://<your machine>:8200 (you may need to add rules to a firewall, IPTables chain or Securtity Group to open this port)
+Access Vault in your web browser by browsing to http://[your ip or fqdn]:8200 (you may need to add rules to a firewall, IPTables chain or Securtity Group to open this port)
 
 Setup 1 master key share, and 1 Vault Token (initially, for POC), download the credentials
 Unseal the vault, login with the root token
