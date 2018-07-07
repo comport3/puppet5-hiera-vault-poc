@@ -26,7 +26,7 @@ Access Vault in your web browser by browsing to http://[your ip or fqdn]:8200 (y
 Setup 1 master key share, and 1 Vault Token (initially, for POC), download the credentials
 Unseal the vault, login with the root token
 
-#puppet apply /etc/puppetlabs/code/environments/production/manifests/site.pp
+$ puppet apply /etc/puppetlabs/code/environments/production/manifests/site.pp
 
 Running Puppet with the above command at this stage should return the value from data/common.yaml:
 "Value coming from Hiera YAML, Vault NOT working"
